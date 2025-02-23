@@ -1,13 +1,7 @@
 import initGame from './app';
 
 beforeEach(() => {
-  // Создаём элементы DOM перед каждым тестом
-  document.body.innerHTML = `
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-  `;
+  document.body.innerHTML = '<div class="game"></div>'; // Создаём элемент DOM  
 });
 
 test('initGame should append goblin to a cell', () => {
